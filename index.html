@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <h2>Enter Password to Continue</h2>
+  <input type="password" id="password" placeholder="Enter Password">
+  <button onclick="checkPassword()">Login</button>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      if (password === "tushar@123") {
+        window.location.href = "protected.html";
+      } else {
+        alert("Incorrect password");
+      }
+    }
+  </script>
+</body>
+</html>
